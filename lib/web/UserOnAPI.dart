@@ -1,3 +1,5 @@
+import 'package:try_flutter/models/User.dart';
+
 class UserOnAPI {
   final String gender;
   final UserName name;
@@ -16,6 +18,17 @@ class UserOnAPI {
       picture: UserPicture.fromJson(json['picture'])
     );
   }
+
+  User toUser() {
+    return User(
+      name: name.fullName(),
+      gender: gender,
+      email: email,
+      phone: phone,
+      thumbnailURL: picture.thumbnail,
+      imageURL: picture.medium
+    );
+  }
 }
 
 class UserName {
@@ -31,6 +44,10 @@ class UserName {
       first: json['first'],
       last: json['last'],
     );
+  }
+
+  String fullName() {
+    return "$title $first $last";
   }
 }
 

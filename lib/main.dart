@@ -1,6 +1,8 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
+import 'package:try_flutter/models/User.dart';
 import 'package:try_flutter/ui/CircleImage.dart';
+import 'package:try_flutter/ui/UserSummaryView.dart';
 import 'package:try_flutter/web/UsersAPI.dart';
 import 'package:try_flutter/web/UsersAPIResponse.dart';
 
@@ -38,6 +40,14 @@ class RandomWordsState extends State<RandomWords> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleImage(url: 'https://www.placecage.com/c/100/100', size: 60.0,),
+            UserSummaryView(user: User(
+              name: 'Nicholas Cage',
+              gender: 'male',
+              email: 'cage@example.com',
+              phone: '09000000000',
+              thumbnailURL: 'https://www.placecage.com/100/100',
+              imageURL: 'https://www.placecage.com/200/200'
+            ))
           ],
         ),
       )
