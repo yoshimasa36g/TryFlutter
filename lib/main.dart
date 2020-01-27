@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:try_flutter/web/UsersView.dart';
+import 'package:try_flutter/ui/UsersView.dart';
 
 void main() => runApp(MyApp());
 
