@@ -6,12 +6,11 @@ class User {
   final String thumbnailURL;
   final String imageURL;
 
-  User({
-    this.name,
-    this.gender,
-    this.email,
-    this.phone,
-    this.thumbnailURL,
-    this.imageURL
-  });
+  User(
+      {this.name,
+      this.gender,
+      this.email,
+      this.phone,
+      this.thumbnailURL,
+      this.imageURL});
 }

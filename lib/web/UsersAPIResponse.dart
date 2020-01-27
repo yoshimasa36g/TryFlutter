@@ -7,7 +7,8 @@ class UsersAPIResponse {
 
   factory UsersAPIResponse.fromJson(Map<String, dynamic> json) {
     final List<dynamic> results = json['results'];
-    final List<UserOnAPI> users = results.map((dynamic user) => UserOnAPI.fromJson(user)).toList();
+    final List<UserOnAPI> users =
+        results.map((dynamic user) => UserOnAPI.fromJson(user)).toList();
     return UsersAPIResponse(results: users);
   }
 }

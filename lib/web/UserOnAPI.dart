@@ -11,23 +11,21 @@ class UserOnAPI {
 
   factory UserOnAPI.fromJson(Map<String, dynamic> json) {
     return UserOnAPI(
-      gender: json['gender'],
-      name: UserName.fromJson(json['name']),
-      email: json['email'],
-      phone: json['phone'],
-      picture: UserPicture.fromJson(json['picture'])
-    );
+        gender: json['gender'],
+        name: UserName.fromJson(json['name']),
+        email: json['email'],
+        phone: json['phone'],
+        picture: UserPicture.fromJson(json['picture']));
   }
 
   User toUser() {
     return User(
-      name: name.fullName(),
-      gender: gender,
-      email: email,
-      phone: phone,
-      thumbnailURL: picture.thumbnail,
-      imageURL: picture.medium
-    );
+        name: name.fullName(),
+        gender: gender,
+        email: email,
+        phone: phone,
+        thumbnailURL: picture.thumbnail,
+        imageURL: picture.medium);
   }
 }
 
@@ -60,9 +58,8 @@ class UserPicture {
 
   factory UserPicture.fromJson(Map<String, dynamic> json) {
     return UserPicture(
-      large: json['large'],
-      medium: json['medium'],
-      thumbnail: json['thumbnail']
-    );
+        large: json['large'],
+        medium: json['medium'],
+        thumbnail: json['thumbnail']);
   }
 }

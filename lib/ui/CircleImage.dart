@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 
 class CircleImage extends StatelessWidget {
@@ -13,12 +12,8 @@ class CircleImage extends StatelessWidget {
       width: size,
       height: size,
       decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        image: DecorationImage(
-          fit: BoxFit.fill,
-          image: NetworkImage(url)
-        )
-      ),
+          shape: BoxShape.circle,
+          image: DecorationImage(fit: BoxFit.fill, image: NetworkImage(url))),
     );
   }
 }
