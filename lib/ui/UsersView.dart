@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:try_flutter/models/User.dart';
+import 'package:try_flutter/ui/UserDetailView.dart';
 import 'package:try_flutter/ui/UserSummaryView.dart';
 import 'package:try_flutter/web/UsersAPI.dart';
 import 'package:try_flutter/web/UsersAPIResponse.dart';
@@ -70,7 +71,8 @@ class UsersViewState extends State<UsersView> {
         Material(
           child: InkWell(
             onTap: () {
-              print('on tapped');
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => UserDetailView(user: user)));
             },
             child: UserSummaryView(user: user),
           ),
