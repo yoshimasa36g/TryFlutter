@@ -1,16 +1,13 @@
-# try_flutter
+TryFlutter
+============
 
-A new Flutter project.
+flutterを試すために作った簡単なサンプルです。
 
-## Getting Started
+[Random User Generator][random-user] で取得したユーザ情報を一覧表示＆詳細表示するだけのシンプルなアプリです。
 
-This project is a starting point for a Flutter application.
+Environment
+------------
 
-A few resources to get you started if this is your first Flutter project:
+- flutter 1.14.4-pre.45
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[random-user]: https://randomuser.me
